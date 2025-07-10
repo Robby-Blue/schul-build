@@ -14,17 +14,19 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           repository: Robby-Blue/schul-latex
+          path: schul-latex
 
       - name: Compile
-        uses: Robby-Blue/latex-batch-action@v0.1
+        uses: Robby-Blue/latex-combined-action@v0.1
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: pdfs
-          path: pdfs
+          path: output.pdf
 
       - name: Upload to Discord
         env:
@@ -32,4 +34,4 @@ jobs:
         run: >
           curl $WEBHOOK_URL -X POST -H "Content-Type: multipart/form-data"
           -F 'payload_json={"username": "LaTex"}'
-          -F "files[0]=@$GITHUB_WORKSPACE/pdfs.zip;type=application/pdf"
+          -F "files[0]=@$GITHUB_WORKSPACE/output.pdf;type=application/pdf"
