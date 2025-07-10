@@ -1,0 +1,38 @@
+SET TITLE "\LARGE{Lernzettel} \\ \normalsize{für das} \\ [-0.8em] \LARGE{Abitur 2026}"
+SET AUTHOR "Zoe"
+SET DATE "März 2025"
+SET TOC "true"
+
+USE schul-latex/lernzettel
+SECTION "Mathe"
+  USE mathe/themen
+  SECTION "Grundlagen"
+    USE grundlagen STRICT
+    INCLUDE ableitungsregeln
+    INCLUDE lineare_gleichungssysteme
+    INCLUDE umkehrfunktionen
+    INCLUDE steckbriefaufgaben
+  SECTION "Analysis"
+    USE analysis STRICT
+    INCLUDE integrale
+    INCLUDE abschnitte
+    INCLUDE differenzialgleichungen
+    INCLUDE e_funktionen
+    INCLUDE funktionsscharen
+    INCLUDE wachstum
+  SECTION "Analytische Geometrie"
+    USE analytische_geometrie STRICT
+    INCLUDE vektoren
+    INCLUDE geraden
+    INCLUDE ebenen
+    INCLUDE skalarprodukte
+    INCLUDE vektorenprodukte
+    INCLUDE lagebeziehung_ebene_gerade
+SECTION "Politik"
+  USE politik/themen
+  SECTION "Wirtschaft"
+    USE wirtschaft STRICT
+    INCLUDE freie_marktwirtschaft
+    INCLUDE planwirtschaft
+    INCLUDE soziale_marktwirtschaft
+    INCLUDE wirtschaftsziele
