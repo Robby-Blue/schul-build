@@ -1,10 +1,14 @@
-SET TITLE "\LARGE{Lernzettel} \\ \normalsize{für das} \\ [-0.8em] \LARGE{Abitur 2026}"
-SET AUTHOR "Zoe"
-SET DATE "März 2025"
+SET TITLE "\Huge \textsc{Abitur 2026}"
+SET SUBTITLE "\LARGE \textbf{Alles Relevante}"
+SET AUTHOR "\Large \textit{Zoe}"
+SET EXPLANATION "\large Ausführliche Lernzettel für das Niedersächsische Zentralabitur 2026 \\
+      in den Fächern Mathematik, Physik, Englisch (erhöhtes Niveau), \\
+      Politik und Biologie (grundlegendes Niveau)"
+SET DATE "\texttt{\today}"
 SET TOC "true"
 
 USE schul-latex/lernzettel
-SECTION "Mathe"
+SECTION "Mathematik"
   USE mathe/themen
   SECTION "Grundlagen"
     USE grundlagen STRICT
@@ -27,7 +31,9 @@ SECTION "Mathe"
     INCLUDE ebenen
     INCLUDE skalarprodukte
     INCLUDE vektorenprodukte
-    INCLUDE lagebeziehung_ebene_gerade
+    INCLUDE lagebeziehungen_ebene_gerade
+    INCLUDE lagebeziehungen_ebenen
+    INCLUDE abstände
 SECTION "Politik"
   USE politik/themen
   SECTION "Wirtschaft"
