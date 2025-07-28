@@ -12,6 +12,7 @@ SECTION "Mathematik"
   USE mathe/themen
   SECTION "Grundlagen"
     USE grundlagen STRICT
+    INCLUDE taschenrechner
     INCLUDE ableitungsregeln
     INCLUDE lineare_gleichungssysteme
     INCLUDE umkehrfunktionen
@@ -33,6 +34,7 @@ SECTION "Mathematik"
     INCLUDE vektorenprodukte
     INCLUDE lagebeziehungen_ebene_gerade
     INCLUDE lagebeziehungen_ebenen
+    INCLUDE winkel
     INCLUDE abstände
 SECTION "Politik"
   USE politik/themen
