@@ -11,23 +11,25 @@ USE schul-latex/lernzettel
 SECTION "Mathematik"
   USE mathe/themen
   SECTION "Grundlagen"
-    USE grundlagen STRICT
+    USE grundlagen FILL
     INCLUDE taschenrechner
-    INCLUDE ableitungsregeln
+    INCLUDE ableitungen
     INCLUDE lineare_gleichungssysteme
     INCLUDE umkehrfunktionen
-    INCLUDE steckbriefaufgaben
   SECTION "Analysis"
-    USE analysis STRICT
+    USE analysis FILL
     INCLUDE integrale
     INCLUDE abschnitte
     INCLUDE differenzialgleichungen
     INCLUDE e_funktionen
     INCLUDE funktionsscharen
     INCLUDE wachstum
+    INCLUDE steckbriefaufgaben
   SECTION "Analytische Geometrie"
-    USE analytische_geometrie STRICT
+    USE analytische_geometrie FILL
+    INCLUDE punkte
     INCLUDE vektoren
+    INCLUDE figuren
     INCLUDE geraden
     INCLUDE ebenen
     INCLUDE skalarprodukte
@@ -39,7 +41,7 @@ SECTION "Mathematik"
 SECTION "Politik"
   USE politik/themen
   SECTION "Wirtschaft"
-    USE wirtschaft STRICT
+    USE wirtschaft FILL
     INCLUDE freie_marktwirtschaft
     INCLUDE planwirtschaft
     INCLUDE soziale_marktwirtschaft
