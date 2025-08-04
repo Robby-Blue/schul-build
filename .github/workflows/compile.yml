@@ -11,8 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
+      - name: Checkout self
+        uses: actions/checkout@v4
+
+      - name: Checkout LaTex Repo
+        uses: actions/checkout@v4
         with:
           repository: Robby-Blue/schul-latex
           path: schul-latex
@@ -26,10 +29,13 @@ jobs:
           name: pdfs
           path: output.pdf
 
+      - name: Rename output
+        run: mv output.pdf output$(date -I).pdf
+
       - name: Upload to Discord
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
         run: >
           curl $WEBHOOK_URL -X POST -H "Content-Type: multipart/form-data"
           -F 'payload_json={"username": "LaTex"}'
-          -F "files[0]=@$GITHUB_WORKSPACE/output.pdf;type=application/pdf"
+          -F "files[0]=@$GITHUB_WORKSPACE/output$(date -I).pdf;type=application/pdf"
