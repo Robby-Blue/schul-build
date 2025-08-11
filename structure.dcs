@@ -25,12 +25,14 @@ SECTION "Mathematik"
     INCLUDE funktionsscharen
     INCLUDE wachstum
     INCLUDE steckbriefaufgaben
+    INCLUDE zusammengesetzt
   SECTION "Analytische Geometrie"
     USE analytische_geometrie FILL
     INCLUDE punkte
     INCLUDE vektoren
     INCLUDE figuren
     INCLUDE geraden
+    INCLUDE lagebeziehungen_geraden
     INCLUDE ebenen
     INCLUDE skalarprodukte
     INCLUDE vektorenprodukte
@@ -38,6 +40,11 @@ SECTION "Mathematik"
     INCLUDE lagebeziehungen_ebenen
     INCLUDE winkel
     INCLUDE abstände
+SECTION "Physik"
+  USE physik/themen
+  SECTION "Elektrizität"
+    USE elektrizität
+    INCLUDE ladungen
 SECTION "Politik"
   USE politik/themen
   SECTION "Wirtschaft"
