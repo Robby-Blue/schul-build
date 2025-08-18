@@ -43,8 +43,12 @@ SECTION "Mathematik"
 SECTION "Physik"
   USE physik/themen
   SECTION "Elektrizität"
-    USE elektrizität
+    USE elektrizität FILL
     INCLUDE ladungen
+    INCLUDE spannung
+    INCLUDE stromstärke
+    INCLUDE elektrische_felder
+    INCLUDE flächenladungsdichte
 SECTION "Politik"
   USE politik/themen
   SECTION "Wirtschaft"
