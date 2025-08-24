@@ -40,6 +40,12 @@ SECTION "Mathematik"
     INCLUDE lagebeziehungen_ebenen
     INCLUDE winkel
     INCLUDE abstände
+  SECTION "Stochastik"
+    USE stochastik FILL
+    INCLUDE wahrscheinlichkeiten
+    INCLUDE bedingte_wahrscheinlichkeiten
+    INCLUDE baumdiagramme
+    INCLUDE vierfeldertafel
 SECTION "Physik"
   USE physik/themen
   SECTION "Elektrizität"
@@ -48,7 +54,11 @@ SECTION "Physik"
     INCLUDE spannung
     INCLUDE stromstärke
     INCLUDE elektrische_felder
+    INCLUDE energie_plattenkondensator
+    INCLUDE plattenkondensatoren_spannung
+    INCLUDE geschwindigkeit_plattenkondensator
     INCLUDE flächenladungsdichte
+    INCLUDE coulombsche_gesetz
 SECTION "Politik"
   USE politik/themen
   SECTION "Wirtschaft"
