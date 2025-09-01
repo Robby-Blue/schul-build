@@ -43,21 +43,20 @@ SECTION "Mathematik"
   SECTION "Stochastik"
     USE stochastik FILL
     INCLUDE wahrscheinlichkeiten
-    INCLUDE bedingte_wahrscheinlichkeiten
-    INCLUDE baumdiagramme
-    INCLUDE vierfeldertafel
+    INCLUDE darstellungen
+    INCLUDE zufallsgrößen
 SECTION "Physik"
   USE physik/themen
   SECTION "Elektrizität"
     USE elektrizität FILL
     INCLUDE ladungen
-    INCLUDE spannung
-    INCLUDE stromstärke
+    INCLUDE größen
     INCLUDE elektrische_felder
-    INCLUDE energie_plattenkondensator
-    INCLUDE plattenkondensatoren_spannung
-    INCLUDE geschwindigkeit_plattenkondensator
-    INCLUDE flächenladungsdichte
+    SECTION "Plattenkondensatoren"
+      USE plattenkondensatoren FILL
+      INCLUDE e_feld
+      INCLUDE energie
+      INCLUDE aufladen
     INCLUDE coulombsche_gesetz
 SECTION "Politik"
   USE politik/themen
