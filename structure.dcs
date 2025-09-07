@@ -45,6 +45,8 @@ SECTION "Mathematik"
     INCLUDE wahrscheinlichkeiten
     INCLUDE darstellungen
     INCLUDE zufallsgrößen
+    INCLUDE binomialkoeffizienten
+    INCLUDE bernoulli_ketten
 SECTION "Physik"
   USE physik/themen
   SECTION "Elektrizität"
@@ -54,9 +56,11 @@ SECTION "Physik"
     INCLUDE elektrische_felder
     SECTION "Plattenkondensatoren"
       USE plattenkondensatoren FILL
+      INCLUDE kondensatoren
       INCLUDE e_feld
       INCLUDE energie
       INCLUDE aufladen
+      INCLUDE kapazität_bestimmen
     INCLUDE coulombsche_gesetz
 SECTION "Politik"
   USE politik/themen
