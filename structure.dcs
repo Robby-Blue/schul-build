@@ -9,7 +9,7 @@ SET TOC "true"
 
 USE schul-latex/lernzettel
 SECTION "Mathematik"
-  USE mathe/themen
+  USE mathe/themen FILL
   SECTION "Grundlagen"
     USE grundlagen FILL
     INCLUDE taschenrechner
@@ -46,9 +46,15 @@ SECTION "Mathematik"
     INCLUDE darstellungen
     INCLUDE zufallsgrößen
     INCLUDE binomialkoeffizienten
-    INCLUDE bernoulli_ketten
+    INCLUDE binomialverteilung
+    INCLUDE kumulative_wahrscheinlichkeiten
 SECTION "Physik"
-  USE physik/themen
+  USE physik/themen FILL
+  SECTION "Grundlagen"
+    USE grundlagen FILL
+    INCLUDE taschenrechner
+    INCLUDE präfixe
+    INCLUDE beurteilen
   SECTION "Elektrizität"
     USE elektrizität FILL
     INCLUDE ladungen
@@ -62,8 +68,28 @@ SECTION "Physik"
       INCLUDE aufladen
       INCLUDE kapazität_bestimmen
     INCLUDE coulombsche_gesetz
+  SECTION "Magnetismus"
+    USE magnetismus FILL
+    INCLUDE magnetfelder
+    INCLUDE lange_spule
+    INCLUDE lorentzkraft
+    INCLUDE flussdichte
+    INCLUDE hall_effekt
+    INCLUDE magnetischer_fluss
+    INCLUDE induktion
+    INCLUDE hallsonde
+    INCLUDE fadenstrahlröhre
+  SECTION "Quantenphysik"
+    USE quanten FILL
+    INCLUDE hallwachs
+    INCLUDE fotoeffekt
+SECTION "Biologie"
+  USE bio/themen FILL
+  SECTION "genetik"
+    USE genetik FILL
+    INCLUDE DNA
 SECTION "Politik"
-  USE politik/themen
+  USE politik/themen FILL
   SECTION "Wirtschaft"
     USE wirtschaft FILL
     INCLUDE freie_marktwirtschaft
