@@ -67,7 +67,9 @@ SECTION "Physik"
       INCLUDE energie
       INCLUDE aufladen
       INCLUDE kapazität_bestimmen
+    INCLUDE millikan
     INCLUDE coulombsche_gesetz
+    INCLUDE elektronenstrahlröhre
   SECTION "Magnetismus"
     USE magnetismus FILL
     INCLUDE magnetfelder
@@ -77,15 +79,42 @@ SECTION "Physik"
     INCLUDE hall_effekt
     INCLUDE magnetischer_fluss
     INCLUDE induktion
+    INCLUDE selbstinduktion
     INCLUDE hallsonde
     INCLUDE fadenstrahlröhre
+    INCLUDE transformator
+    INCLUDE wien_filter
+    INCLUDE massenspektrometer
+  SECTION "Schwingungen"
+    USE schwingungen FILL
+    INCLUDE mechanische_schwingungen
+    INCLUDE federoszilator
+    INCLUDE fadenpendel
+  SECTION "Wellen"
+    USE wellen FILL
+    INCLUDE mechanische_wellen
+    INCLUDE ausbreitung
+    INCLUDE stehende_wellen
+  SECTION "Licht"
+    USE licht FILL
+    INCLUDE lichtgeschwindigkeit
+    INCLUDE michelson_interferometer
+    INCLUDE kohärenz
+    INCLUDE doppelspalt
   SECTION "Quantenphysik"
     USE quanten FILL
     INCLUDE hallwachs
     INCLUDE fotoeffekt
+    INCLUDE h_mit_leds
+    INCLUDE röntgen
+SECTION "Englisch"
+  USE english
+  INCLUDE task_types
+  INCLUDE text_types
+  INCLUDE seven_methods
 SECTION "Biologie"
   USE bio/themen FILL
-  SECTION "genetik"
+  SECTION "Genetik"
     USE genetik FILL
     INCLUDE DNA
 SECTION "Politik"
