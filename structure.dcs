@@ -5,6 +5,8 @@ SET EXPLANATION "\large Ausführliche Lernzettel für das Niedersächsische Zent
       in den Fächern Mathematik, Physik, Englisch (erhöhtes Niveau), \\
       Politik und Biologie (grundlegendes Niveau)"
 SET DATE "\texttt{\today}"
+SET REPO_FOLDER "schul-latex"
+SET COMMIT "\texttt{\commit}"
 SET TOC "true"
 
 USE schul-latex/lernzettel
@@ -54,7 +56,7 @@ SECTION "Physik"
     USE grundlagen FILL
     INCLUDE taschenrechner
     INCLUDE präfixe
-    INCLUDE beurteilen
+    INCLUDE operatoren
   SECTION "Elektrizität"
     USE elektrizität FILL
     INCLUDE ladungen
@@ -88,30 +90,42 @@ SECTION "Physik"
   SECTION "Schwingungen"
     USE schwingungen FILL
     INCLUDE mechanische_schwingungen
+    INCLUDE resonanz
     INCLUDE federoszilator
     INCLUDE fadenpendel
   SECTION "Wellen"
     USE wellen FILL
     INCLUDE mechanische_wellen
+    INCLUDE polarisation
     INCLUDE ausbreitung
     INCLUDE stehende_wellen
+    INCLUDE schwebung
+    INCLUDE schall
   SECTION "Licht"
     USE licht FILL
+    INCLUDE wellenlängen
     INCLUDE lichtgeschwindigkeit
     INCLUDE michelson_interferometer
-    INCLUDE kohärenz
     INCLUDE doppelspalt
+    INCLUDE gitter
   SECTION "Quantenphysik"
     USE quanten FILL
     INCLUDE hallwachs
     INCLUDE fotoeffekt
     INCLUDE h_mit_leds
     INCLUDE röntgen
+    INCLUDE bragg
+    INCLUDE debroglie
+    INCLUDE hur
 SECTION "Englisch"
-  USE english
-  INCLUDE task_types
-  INCLUDE text_types
-  INCLUDE seven_methods
+  USE english FILL
+  SECTION "Writing"
+    USE tasks FILL
+    INCLUDE task_types
+    INCLUDE text_types
+  SECTION "Topics"
+    USE topics
+    INCLUDE seven_methods
 SECTION "Biologie"
   USE bio/themen FILL
   SECTION "Genetik"
