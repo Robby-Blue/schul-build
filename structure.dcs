@@ -131,8 +131,31 @@ SECTION "Biologie"
   SECTION "Genetik"
     USE genetik FILL
     INCLUDE DNA
+    INCLUDE replikation
 SECTION "Politik"
   USE politik/themen FILL
+  SECTION "Grundlagen"
+    USE grundlagen FILL
+    INCLUDE grundwerte
+  SECTION "Verfassungsorgane"
+    USE verfassungsorgane FILL
+    INCLUDE regierung
+    INCLUDE kanzler
+    INCLUDE bundestag
+    INCLUDE bundesrat
+    INCLUDE präsident
+    INCLUDE verfassungsgericht
+    INCLUDE gesetze
+  SECTION "Partizipation"
+    USE partizipation FILL
+    INCLUDE analyse
+    INCLUDE wahlen
+    INCLUDE parteien
+  SECTION "Frieden"
+    USE frieden FILL
+    INCLUDE krieg
+    INCLUDE nato
+    INCLUDE uno
   SECTION "Wirtschaft"
     USE wirtschaft FILL
     INCLUDE freie_marktwirtschaft
