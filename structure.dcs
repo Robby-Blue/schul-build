@@ -47,9 +47,13 @@ SECTION "Mathematik"
     INCLUDE wahrscheinlichkeiten
     INCLUDE darstellungen
     INCLUDE zufallsgrößen
+    INCLUDE diskrete_zufallsgrößen
     INCLUDE binomialkoeffizienten
     INCLUDE binomialverteilung
     INCLUDE kumulative_wahrscheinlichkeiten
+    INCLUDE konfidenzintervalle
+    INCLUDE prognosen
+    INCLUDE dichtefunktionen
 SECTION "Physik"
   USE physik/themen FILL
   SECTION "Grundlagen"
@@ -151,11 +155,15 @@ SECTION "Politik"
     INCLUDE analyse
     INCLUDE wahlen
     INCLUDE parteien
+    INCLUDE bürgerinitiativen
+    INCLUDE verbände
+    INCLUDE bewegungen
   SECTION "Frieden"
     USE frieden FILL
     INCLUDE krieg
     INCLUDE nato
     INCLUDE uno
+    INCLUDE theorie
   SECTION "Wirtschaft"
     USE wirtschaft FILL
     INCLUDE freie_marktwirtschaft
