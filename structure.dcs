@@ -136,15 +136,21 @@ SECTION "Biologie"
     USE genetik FILL
     INCLUDE DNA
     INCLUDE replikation
+    INCLUDE enzyme
+    INCLUDE proteine
+    INCLUDE transkription
 SECTION "Politik"
   USE politik/themen FILL
   SECTION "Grundlagen"
     USE grundlagen FILL
+    INCLUDE operatoren
     INCLUDE grundwerte
+    INCLUDE urteilen
   SECTION "Verfassungsorgane"
     USE verfassungsorgane FILL
     INCLUDE regierung
     INCLUDE kanzler
+    INCLUDE fraktionen
     INCLUDE bundestag
     INCLUDE bundesrat
     INCLUDE präsident
@@ -163,7 +169,10 @@ SECTION "Politik"
     INCLUDE krieg
     INCLUDE nato
     INCLUDE uno
+    INCLUDE fragile_staaten
     INCLUDE theorie
+    INCLUDE mali
+    INCLUDE ziv_hexagon
   SECTION "Wirtschaft"
     USE wirtschaft FILL
     INCLUDE freie_marktwirtschaft
