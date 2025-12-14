@@ -15,6 +15,7 @@ SECTION "Mathematik"
   SECTION "Grundlagen"
     USE grundlagen FILL
     INCLUDE taschenrechner
+    INCLUDE quad_lösen
     INCLUDE ableitungen
     INCLUDE lineare_gleichungssysteme
     INCLUDE umkehrfunktionen
@@ -42,6 +43,7 @@ SECTION "Mathematik"
     INCLUDE lagebeziehungen_ebenen
     INCLUDE winkel
     INCLUDE abstände
+    INCLUDE projektionen
   SECTION "Stochastik"
     USE stochastik FILL
     INCLUDE wahrscheinlichkeiten
@@ -54,6 +56,7 @@ SECTION "Mathematik"
     INCLUDE konfidenzintervalle
     INCLUDE prognosen
     INCLUDE dichtefunktionen
+    INCLUDE normalverteilung
 SECTION "Physik"
   USE physik/themen FILL
   SECTION "Grundlagen"
@@ -121,24 +124,20 @@ SECTION "Physik"
     INCLUDE bragg
     INCLUDE debroglie
     INCLUDE hur
+    INCLUDE mach-zehnder
+    INCLUDE franck-hertz
+    INCLUDE linienspektrum
 SECTION "Englisch"
-  USE english FILL
+  USE english
   SECTION "Writing"
     USE tasks FILL
     INCLUDE task_types
     INCLUDE text_types
   SECTION "Topics"
-    USE topics
+    USE topics FILL
     INCLUDE seven_methods
-SECTION "Biologie"
-  USE bio/themen FILL
-  SECTION "Genetik"
-    USE genetik FILL
-    INCLUDE DNA
-    INCLUDE replikation
-    INCLUDE enzyme
-    INCLUDE proteine
-    INCLUDE transkription
+    INCLUDE behold_the_dreamers
+    INCLUDE shakespeare
 SECTION "Politik"
   USE politik/themen FILL
   SECTION "Grundlagen"
@@ -179,3 +178,25 @@ SECTION "Politik"
     INCLUDE planwirtschaft
     INCLUDE soziale_marktwirtschaft
     INCLUDE wirtschaftsziele
+SECTION "Biologie"
+  USE bio/themen FILL
+  SECTION "Genetik"
+    USE genetik FILL
+    INCLUDE DNA
+    INCLUDE replikation
+    INCLUDE prot_biosynthese
+    INCLUDE enzyme
+    INCLUDE proteine
+    INCLUDE transkription
+    INCLUDE prozessierung
+    INCLUDE translation
+    INCLUDE alt_spleiß
+    INCLUDE zelldifferenzierung
+    INCLUDE methylierung
+    INCLUDE mutation
+  SECTION "Vererbung"
+    USE erben FILL
+    INCLUDE chromosome
+    INCLUDE stammbäume
+    INCLUDE stammbaum_autosom
+    INCLUDE stammbaum_gonosom
