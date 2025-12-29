@@ -127,6 +127,9 @@ SECTION "Physik"
     INCLUDE mach-zehnder
     INCLUDE franck-hertz
     INCLUDE linienspektrum
+  SECTION "Atome"
+    USE atome FILL
+    INCLUDE energieniveaus
 SECTION "Englisch"
   USE english
   SECTION "Writing"
@@ -180,6 +183,13 @@ SECTION "Politik"
     INCLUDE wirtschaftsziele
 SECTION "Biologie"
   USE bio/themen FILL
+  SECTION "Neurobiologie"
+    USE neuro FILL
+    INCLUDE nervensystem
+    INCLUDE nervenzellen
+    INCLUDE ruhepotential
+    INCLUDE rezeptorpotential
+    INCLUDE aktionspotential
   SECTION "Genetik"
     USE genetik FILL
     INCLUDE DNA
@@ -194,8 +204,6 @@ SECTION "Biologie"
     INCLUDE zelldifferenzierung
     INCLUDE methylierung
     INCLUDE mutation
-  SECTION "Vererbung"
-    USE erben FILL
     INCLUDE chromosome
     INCLUDE stammbäume
     INCLUDE stammbaum_autosom
