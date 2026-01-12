@@ -183,13 +183,34 @@ SECTION "Politik"
     INCLUDE wirtschaftsziele
 SECTION "Biologie"
   USE bio/themen FILL
+  SECTION "Grundlagen"
+    USE grundlagen FILL
+    INCLUDE diagramme
+    INCLUDE modelle
   SECTION "Neurobiologie"
     USE neuro FILL
+    INCLUDE reflexe
     INCLUDE nervensystem
     INCLUDE nervenzellen
     INCLUDE ruhepotential
     INCLUDE rezeptorpotential
     INCLUDE aktionspotential
+    INCLUDE erregungsweiterleitung
+    INCLUDE synapsen
+    INCLUDE codierung
+  SECTION "Zellatmung"
+    USE zellatmung FILL
+    INCLUDE zellatmung
+    INCLUDE teilschritte
+    INCLUDE atp
+    INCLUDE atp-synthase
+    INCLUDE rückkopplung
+    INCLUDE shuttle
+    INCLUDE umwandlung
+    INCLUDE atmungskette
+  SECTION "Ökologie"
+    USE ökologie FILL
+    INCLUDE ökosysteme
   SECTION "Genetik"
     USE genetik FILL
     INCLUDE DNA
@@ -208,3 +229,7 @@ SECTION "Biologie"
     INCLUDE stammbäume
     INCLUDE stammbaum_autosom
     INCLUDE stammbaum_gonosom
+  SECTION "Evolution"
+    USE evolution FILL
+    INCLUDE kausalität
+    INCLUDE synth_theorie
