@@ -211,6 +211,16 @@ SECTION "Biologie"
   SECTION "Ökologie"
     USE ökologie FILL
     INCLUDE ökosysteme
+    INCLUDE potenz
+    INCLUDE abiotische_faktoren
+    INCLUDE populationsentwicklung
+    INCLUDE wechselbeziehungen
+  SECTION "Fotosynthese"
+    USE fotosynthese FILL
+    INCLUDE fotosynthese
+    INCLUDE blätter
+    INCLUDE chloroplasten
+    INCLUDE ablauf
   SECTION "Genetik"
     USE genetik FILL
     INCLUDE DNA
