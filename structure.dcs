@@ -115,6 +115,7 @@ SECTION "Physik"
     INCLUDE michelson_interferometer
     INCLUDE doppelspalt
     INCLUDE gitter
+    INCLUDE wellenspektren
   SECTION "Quantenphysik"
     USE quanten FILL
     INCLUDE hallwachs
@@ -130,6 +131,17 @@ SECTION "Physik"
   SECTION "Atome"
     USE atome FILL
     INCLUDE energieniveaus
+    INCLUDE bohrsche
+    INCLUDE gasentladungsröhre
+    INCLUDE potentialtopf
+    INCLUDE mehrdimensionaler_topf
+    INCLUDE floureszenz
+    INCLUDE resonanzabsorption
+  SECTION "Kernphysik"
+    USE kerne FILL
+    INCLUDE aufbau
+    INCLUDE strahlungen
+    INCLUDE aktivität
 SECTION "Englisch"
   USE english
   SECTION "Writing"
@@ -215,12 +227,15 @@ SECTION "Biologie"
     INCLUDE abiotische_faktoren
     INCLUDE populationsentwicklung
     INCLUDE wechselbeziehungen
+    INCLUDE trophieebenen
   SECTION "Fotosynthese"
     USE fotosynthese FILL
     INCLUDE fotosynthese
     INCLUDE blätter
     INCLUDE chloroplasten
-    INCLUDE ablauf
+    INCLUDE primärreaktion
+    INCLUDE sekundärreaktion
+    INCLUDE faktoren
   SECTION "Genetik"
     USE genetik FILL
     INCLUDE DNA
