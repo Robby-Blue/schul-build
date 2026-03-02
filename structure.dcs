@@ -142,6 +142,14 @@ SECTION "Physik"
     INCLUDE aufbau
     INCLUDE strahlungen
     INCLUDE aktivität
+    INCLUDE mutter-tochter
+    INCLUDE geiger-müller
+    INCLUDE halbleiterdetektor
+    INCLUDE nebelkammer
+    INCLUDE beta-strahlung
+    INCLUDE alpha-strahlung
+    INCLUDE starke_kernkraft
+    INCLUDE massendefekt
 SECTION "Englisch"
   USE english
   SECTION "Writing"
@@ -178,6 +186,12 @@ SECTION "Politik"
     INCLUDE bürgerinitiativen
     INCLUDE verbände
     INCLUDE bewegungen
+  SECTION "Wirtschaft"
+    USE wirtschaft FILL
+    INCLUDE freie_marktwirtschaft
+    INCLUDE planwirtschaft
+    INCLUDE soziale_marktwirtschaft
+    INCLUDE wirtschaftsziele
   SECTION "Frieden"
     USE frieden FILL
     INCLUDE krieg
@@ -187,12 +201,14 @@ SECTION "Politik"
     INCLUDE theorie
     INCLUDE mali
     INCLUDE ziv_hexagon
-  SECTION "Wirtschaft"
-    USE wirtschaft FILL
-    INCLUDE freie_marktwirtschaft
-    INCLUDE planwirtschaft
-    INCLUDE soziale_marktwirtschaft
-    INCLUDE wirtschaftsziele
+    INCLUDE bundeswehr
+    INCLUDE drohungen
+    INCLUDE eu
+  SECTION "Globalisierung"
+    USE globalisierung FILL
+    INCLUDE globalisierung
+    INCLUDE komparative_kostenvorteile
+    INCLUDE intraindustrieller_handel
 SECTION "Biologie"
   USE bio/themen FILL
   SECTION "Grundlagen"
@@ -258,3 +274,9 @@ SECTION "Biologie"
     USE evolution FILL
     INCLUDE kausalität
     INCLUDE synth_theorie
+    INCLUDE selektion
+    INCLUDE koevolution
+    INCLUDE genetischer_drift
+    INCLUDE artbildung
+    INCLUDE homologien
+    INCLUDE darstellung
