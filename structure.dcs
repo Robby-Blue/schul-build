@@ -49,6 +49,7 @@ SECTION "Mathematik"
     INCLUDE wahrscheinlichkeiten
     INCLUDE darstellungen
     INCLUDE zufallsgrößen
+    INCLUDE simulationen
     INCLUDE diskrete_zufallsgrößen
     INCLUDE binomialkoeffizienten
     INCLUDE binomialverteilung
@@ -94,14 +95,14 @@ SECTION "Physik"
     INCLUDE transformator
     INCLUDE wien_filter
     INCLUDE massenspektrometer
-  SECTION "Schwingungen"
+  SECTION "Schwingungen und Wellen"
     USE schwingungen FILL
     INCLUDE mechanische_schwingungen
     INCLUDE resonanz
     INCLUDE federoszilator
     INCLUDE fadenpendel
-  SECTION "Wellen"
-    USE wellen FILL
+    INCLUDE elektromagnetische
+    INCLUDE gedämpfte
     INCLUDE mechanische_wellen
     INCLUDE polarisation
     INCLUDE ausbreitung
@@ -115,19 +116,27 @@ SECTION "Physik"
     INCLUDE michelson_interferometer
     INCLUDE doppelspalt
     INCLUDE gitter
+    INCLUDE einzelspalt
     INCLUDE wellenspektren
+    INCLUDE subjektiv
   SECTION "Quantenphysik"
     USE quanten FILL
+    INCLUDE quantenteilchen
+    INCLUDE anregung
     INCLUDE hallwachs
     INCLUDE fotoeffekt
     INCLUDE h_mit_leds
     INCLUDE röntgen
     INCLUDE bragg
     INCLUDE debroglie
+    INCLUDE elektronenbeugung
     INCLUDE hur
     INCLUDE mach-zehnder
+    INCLUDE delayed-choice
     INCLUDE franck-hertz
     INCLUDE linienspektrum
+    INCLUDE interferenz
+    INCLUDE laser
   SECTION "Atome"
     USE atome FILL
     INCLUDE energieniveaus
@@ -142,6 +151,7 @@ SECTION "Physik"
     INCLUDE aufbau
     INCLUDE strahlungen
     INCLUDE aktivität
+    INCLUDE zerfallsgesetz
     INCLUDE mutter-tochter
     INCLUDE geiger-müller
     INCLUDE halbleiterdetektor
@@ -150,6 +160,8 @@ SECTION "Physik"
     INCLUDE alpha-strahlung
     INCLUDE starke_kernkraft
     INCLUDE massendefekt
+    INCLUDE bragg-kurve
+    INCLUDE nuklidkarten
 SECTION "Englisch"
   USE english
   SECTION "Writing"
@@ -192,6 +204,7 @@ SECTION "Politik"
     INCLUDE planwirtschaft
     INCLUDE soziale_marktwirtschaft
     INCLUDE wirtschaftsziele
+    INCLUDE realität
   SECTION "Frieden"
     USE frieden FILL
     INCLUDE krieg
@@ -204,17 +217,21 @@ SECTION "Politik"
     INCLUDE bundeswehr
     INCLUDE drohungen
     INCLUDE eu
+    INCLUDE terrorismus
   SECTION "Globalisierung"
     USE globalisierung FILL
     INCLUDE globalisierung
     INCLUDE komparative_kostenvorteile
     INCLUDE intraindustrieller_handel
+    INCLUDE freihandel
+    INCLUDE handelsregime
 SECTION "Biologie"
   USE bio/themen FILL
   SECTION "Grundlagen"
     USE grundlagen FILL
     INCLUDE diagramme
     INCLUDE modelle
+    INCLUDE ethisches_bewerten
   SECTION "Neurobiologie"
     USE neuro FILL
     INCLUDE reflexe
@@ -270,6 +287,7 @@ SECTION "Biologie"
     INCLUDE stammbäume
     INCLUDE stammbaum_autosom
     INCLUDE stammbaum_gonosom
+    INCLUDE gelelektrophorese
   SECTION "Evolution"
     USE evolution FILL
     INCLUDE kausalität
@@ -280,3 +298,5 @@ SECTION "Biologie"
     INCLUDE artbildung
     INCLUDE homologien
     INCLUDE darstellung
+    INCLUDE parsimonie
+    INCLUDE kosten_nutzen
